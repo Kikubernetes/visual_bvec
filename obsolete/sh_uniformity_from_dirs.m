@@ -5,8 +5,6 @@ function [Lvals, Pl, UI] = sh_uniformity_from_dirs(axis_dirs, Lmax)
 % Lvals : 0:Lmax
 % Pl    : 各次数のパワー
 % UI    : Σ_{l>=1} P_l / P_0
-%
-% 軸対称性を考慮するため、内部で [dirs; -dirs] を用いて計算する。
 
     if nargin < 2
         Lmax = 8;
@@ -26,9 +24,6 @@ function [Lvals, Pl, UI] = sh_uniformity_from_dirs(axis_dirs, Lmax)
     dirs  = dirs(norms>0,:);
     norms = norms(norms>0);
     dirs  = dirs ./ norms;
-
-    % ---- 軸対称化：反対方向も追加 ----
-    dirs = [dirs; -dirs];
 
     x = dirs(:,1);
     y = dirs(:,2);
@@ -71,3 +66,4 @@ function [Lvals, Pl, UI] = sh_uniformity_from_dirs(axis_dirs, Lmax)
     P0 = Pl(1);
     UI = sum(Pl(2:end)) / P0;
 end
+

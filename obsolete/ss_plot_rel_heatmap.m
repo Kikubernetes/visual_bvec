@@ -1,4 +1,4 @@
-function ss_plot_rel_heatmap( ...
+function plot_multi_shell_heatmap_bipolar_colored( ...
     bvec_file, bval_file, target_b_list, tol, sigma_deg, use_antipodal)
 % plot_multi_shell_heatmap_bipolar_colored
 %
@@ -181,12 +181,7 @@ function ss_plot_rel_heatmap( ...
     view(45,30);
 
     % b値リストからファイル名を自動生成
-    %out_png = sprintf('heatmap_b[%s].png', ...
-    %    strrep(num2str(target_b_list),' ','_'));
-
-    % bvecファイル名 + b値リスト からファイル名を自動生成
-    [~, bvec_base, ~] = fileparts(bvec_file);
-    out_png = sprintf('%s_b[%s].png', bvec_base, ...
+    out_png = sprintf('heatmap_b[%s].png', ...
         strrep(num2str(target_b_list),' ','_'));
 
     % 高解像度で自動保存（exportgraphics があれば使用）

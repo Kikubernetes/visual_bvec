@@ -10,8 +10,7 @@ function nn = nearest_angle_from_dirs(axis_dirs)
     axis_dirs = axis_dirs ./ vecnorm(axis_dirs, 2, 1);
 
     % 内積行列 G(i,j) = v_i · v_j
-    %G = axis_dirs.' * axis_dirs;  % M×M
-    G = abs(axis_dirs.' * axis_dirs);
+    G = axis_dirs.' * axis_dirs;  % M×M
     M = size(G,1);
 
     % 自身 (対角) を除外
