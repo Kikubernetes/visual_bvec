@@ -6,10 +6,13 @@
 
 bvec の均等性は、拡散指標やトラクトグラフィの精度に影響する重要な要素だが、ベクトル座標の数値だけでは方向分布の特徴を把握しにくい。本ツールは、bvecの軸方向分布を球面上に可視化し、複数の補完的指標を用いて拡散 MRI プロトコルの方向分布の均等性を評価する。
 
-<p allign=center>
+<p align=center>
   <img src="images/16_DWI_AP_b700_2000.png" alt="DWI1" width="32%">
   <img src="images/18_DWI_PA_b700_2000.png" alt="DWI2" width="32%">
   <img src="images/combined_b700_2000.png" alt="Combined" width="32%">
+</p>
+<p align="center">
+  DWI1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DWI2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Combined
 </p>
 
 ## 特徴
