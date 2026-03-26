@@ -6,6 +6,8 @@ This tool is a MATLAB-based tool for intuitive and quantitative evaluation of th
 
 The uniformity of bvecs is an important factor that affects the accuracy of diffusion metrics and tractography, but it is difficult to understand the characteristics of the directional distribution from numerical vector coordinates alone. This tool visualizes the axial distribution of bvecs on a sphere and evaluates the uniformity of directional distribution in diffusion MRI protocols using multiple complementary metrics.
 
+![alt text](16_DWI_AP_b[700__2000].png)![alt text](18_DWI_PA_b[700__2000].png) ![alt text](combined_b[700__2000].png)
+
 ## Features
 
 - Selectable shells for visualization (for example, only some shells or all shells)
