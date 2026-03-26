@@ -4,7 +4,7 @@ English | [日本語](README.ja.md)
 
 This tool is a MATLAB-based tool for intuitive and quantitative evaluation of the spatial distribution of gradient directions (bvecs) in diffusion MRI.
 
-The uniformity of bvecs is an important factor that affects the accuracy of diffusion metrics and tractography, but it is difficult to understand the characteristics of the directional distribution from numerical vector coordinates alone. This tool visualizes the axial distribution of bvecs on a sphere and evaluates the uniformity of directional distribution in diffusion MRI protocols using multiple complementary metrics.
+The uniformity of bvecs is an important factor that affects the accuracy of diffusion metrics and tractography, but it is difficult to grasp the directional distribution from numerical vector coordinates alone. This tool visualizes the axial distribution of bvecs on a sphere and evaluates its uniformity  using multiple complementary metrics.
 
 <p allign=center>
   <img src="images/16_DWI_AP_b700_2000.png" alt="DWI1" width="32%">
