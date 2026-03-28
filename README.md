@@ -86,8 +86,8 @@ Move into the directory containing the bvec and bval files (or specify the files
 Enter the values required for display as follows.
 
 ```matlab
-bvec_file       = 'my_protocol.bvec';
-bval_file       = 'my_protocol.bval';
+bvec_file       = 'samples.bvec';
+bval_file       = 'samples.bval';
 
 target_b_list   = [1000 2000]; % Specify the b-values to display as a list
 tol             = 50;          % Acceptable range of b-value variation (such as 995, 2015). Usually 50 is OK
@@ -103,21 +103,21 @@ ss_plot_rel_heatmap( ...
 
 The heatmap is displayed automatically (can be rotated interactively).
 A screenshot is output as a PNG file in the current directory with a name like the following.
-`my_protocol_b[1000_2000].png`
+`samples_b[1000_2000].png`
 
 ### Output a report
 
 Enter the values required for display.
 
 ```matlab
-dataset_name  = 'my_protocol';  % Name shown in the report. Can be set freely
-bvec_file     = 'my_protocol.bvec';
-bval_file     = 'my_protocol.bval';
+dataset_name  = 'samples';  % Name shown in the report. Can be set freely
+bvec_file     = 'samples.bvec';
+bval_file     = 'samples.bval';
 
 target_b_list = [1000 2000]; % Specify the b-values to view in the heatmap as a list
 tol           = 50;          % Acceptable range of b-value variation (such as 995, 2015). Usually 50 is OK
 lmax          = 8;           % Maximum order used for spherical harmonics
-html_name     = 'protocol1'; % This becomes the folder name. Be careful not to overwrite when running multiple times
+html_name     = 'samples';   % This becomes the folder name. Be careful not to overwrite when running multiple times
 ```
 
 ```matlab
@@ -127,8 +127,8 @@ bvec_uniformity_report( ...
 ```
 
 A folder with the name specified by html_name is created in the current directory.
-(In the above example, a folder named protocol1.)
-Double-click protocol1.html in that folder to view the report in a browser.
+(In the above example, a folder named samples.)
+Double-click samples.html in that folder to view the report in a browser.
 
 #### When the protocol is divided into multiple blocks
 
