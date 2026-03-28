@@ -123,7 +123,7 @@ html_name     = 'samples';   % This becomes the folder name. Be careful not to o
 ```matlab
 % Run
 bvec_uniformity_report( ...
-    dataset_name, bvec_file, bval_file, target_b_list, tol, Lmax, html_name);
+    dataset_name, bvec_file, bval_file, target_b_list, tol, lmax, html_name);
 ```
 
 A folder with the name specified by html_name is created in the current directory.

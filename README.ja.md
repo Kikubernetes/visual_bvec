@@ -123,7 +123,7 @@ html_name     = 'samples'; % フォルダ名になる。複数回実行する場
 ```matlab
 % 実行
 bvec_uniformity_report( ...
-    dataset_name, bvec_file, bval_file, target_b_list, tol, Lmax, html_name);
+    dataset_name, bvec_file, bval_file, target_b_list, tol, lmax, html_name);
 ```
 
 カレントディレクトリに`html_name`で指定した名前のフォルダができる  
