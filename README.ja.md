@@ -92,7 +92,7 @@ bval_file       = 'samples.bval';
 target_b_list   = [1000 2000]; % ヒートマップを表示したいb値をリスト形式で指定
 tol             = 50;          % b値のゆれを許容する範囲（995、2015等） 通常50でOK
 sigma_deg       = 20;          % 大きいほどスムーズな表示になる。通常は20でOK
-use_antipodal   = true;　　　　　% 反対方向の軸も使用。通常はtrueを推奨
+use_antipodal   = true;        % 反対方向の軸も使用。通常はtrueを推奨
 ```
 
 ```matlab
